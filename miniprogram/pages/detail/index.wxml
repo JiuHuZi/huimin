@@ -1,0 +1,90 @@
+<!--pages/detail/index.wxml-->
+<view class="detail">
+	<view class="headerNav">
+		<ul>
+			<li class="active">基本信息</li>
+			<li>图文详情</li>
+		</ul>
+	</view>
+	<view class="swiper">
+		<!--轮播图-->
+		<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}">
+			<block wx:for="{{imgUrls}}" wx:key="this">
+				<swiper-item>
+					<image src="{{item.url}}" class="slide-image" width="355" height="200" />
+				</swiper-item>
+			</block>
+		</swiper>
+	</view>
+	<view class="price-main">
+		<view class="price">
+			<i>￥</i>
+			<em>28.8</em>
+		</view>
+		<view class="time-main">
+			<text>距离本场结束还剩</text>
+			<view class="time">
+				01 : 41 : 03
+			</view>
+		</view>
+	</view>
+	<view class="title-main">
+		<view class="title">卤将军 麻辣鸭掌 10/袋 约280g/袋</view>
+		<view class="order-content">
+			<text>提货时间：08月13日</text>
+			<view class="count">
+				<i>-</i>
+				<span>1</span>
+				<i>+</i>
+			</view>
+		</view>
+	</view>
+	<view class="detail-main">
+		<view class="introduce">商品详情</view>
+		<view class="goods-introduce">
+			<ul>
+				<li>
+					<span>商品名称</span>
+					<span>卤将军 麻辣鸭掌</span>
+				</li>
+				<li>
+					<span>商品编号</span>
+					<span>21009</span>
+				</li>
+				<li>
+					<span>上架时间</span>
+					<span>2022-02-08</span>
+				</li>
+				<li>
+					<span>类型</span>
+					<span>零食</span>
+				</li>
+			</ul>
+		</view>
+		<view class="introduce">图文详情</view>
+		<view class="goods-msg">色泽诱人.富有嚼劲！大家快来买啊！骨酥肉香滋味鲜爽20多味香料的卤汤，香气饱满、浓郁，外皮绵软，肌肉脆嫩，卤汁浸入骨头之中，食后美感久久不去。</view>
+		<view class="detail-img">
+			<ul>
+				<li wx:for="{{detailImgList}}" wx:key="this">
+					<image src="{{item}}" mode='widthFix'></image>
+				</li>
+			</ul>
+		</view>
+	</view>
+	<view class="pay">
+		<view class="left-btn">
+			<view>
+				<i class="iconfont icon-fenxiang"></i>
+				<span>分享</span>
+			</view>
+			<view>
+				<i class="iconfont icon-gouwuche" style="font-size:24px"></i>
+				<span>购物车</span>
+			</view>
+		</view>
+		<view class="right-btn">
+			<view class="cart">加入购物车</view>
+			<view class="paybtn">立即购买</view>
+		</view>
+	</view>
+</view>

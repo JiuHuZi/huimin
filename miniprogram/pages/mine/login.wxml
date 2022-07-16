@@ -1,0 +1,12 @@
+<!--pages/mine/login.wxml-->
+<view class="login">
+	<image src="../../img/logo.png"></image>
+	<view class="title">
+		<text>好吃好喝</text>
+		<text>一家只卖当日菜的社区电商</text>
+	</view>
+	<view class="btn">
+		<view class="phone">手机号登录</view>
+		<view class="wechat">微信登录</view>
+	</view>
+</view>

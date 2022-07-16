@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "iconfont";
+  /* Project id 3319890 */
+  src: url('//at.alicdn.com/t/font_3319890_6zm7ygxl9e.woff2?t=1649838466132') format('woff2'), url('//at.alicdn.com/t/font_3319890_6zm7ygxl9e.woff?t=1649838466132') format('woff'), url('//at.alicdn.com/t/font_3319890_6zm7ygxl9e.ttf?t=1649838466132') format('truetype');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-dingweixiao:before {
+  content: "\e87e";
+}
+.icon-fenxiang:before {
+  content: "\e624";
+}
+.icon-31wode:before {
+  content: "\e601";
+}
+.icon-gouwuche:before {
+  content: "\e899";
+}
+.icon-shouye:before {
+  content: "\e600";
+}
+.icon-5gouwudai:before {
+  content: "\e656";
+}
+.icon-sousuo1:before {
+  content: "\e8b9";
+}
+.cart {
+  width: 100vw;
+  height: 100vh;
+}
+.cart .address {
+  width: 100%;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+}
+.cart .address i {
+  color: red;
+  margin-right: 10px;
+}
+.cart .cartList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 70px;
+  margin-top: 35px;
+  overflow: scroll;
+}
+.cart .cartList ul {
+  width: 100%;
+}
+.cart .cartList ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+.cart .cartList ul li image {
+  width: 150px;
+  height: 90px;
+}
+.cart .cartList ul li .right {
+  display: flex;
+  flex-direction: column;
+}
+.cart .cartList ul li .right text {
+  padding: 5px 0;
+}
+.cart .cartList ul li .right text:first-child {
+  font-weight: bold;
+}
+.cart .cartList ul li .right text.order {
+  font-size: 14px;
+  color: #999;
+}
+.cart .cartList ul li .right .price-main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cart .cartList ul li .right .price-main .count {
+  flex: 3;
+  width: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart .cartList ul li .right .price-main .price {
+  flex: 2;
+  font-weight: bold;
+  margin-top: 10px;
+  color: red;
+}
+.cart .cartList ul li .right .price-main .price i {
+  font-size: 12px;
+}
+.cart .payment {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cart .payment .total {
+  font-weight: bold;
+}
+.cart .payment .total i,
+.cart .payment .total em {
+  color: red;
+}
+.cart .payment .total em {
+  font-size: 24px;
+}
+.cart .payment .btn {
+  background-color: red;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}

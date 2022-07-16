@@ -1,0 +1,58 @@
+<!--miniprogram/pages/cart/index.wxml-->
+<view class="cart">
+    <view class="address">
+        <i class="iconfont icon-dingweixiao"></i>
+        <text>湖南省长沙市岳麓区嘉顺苑小区</text>
+    </view>
+    <view class="cartList">
+        <ul>
+            <li>
+                <checkbox></checkbox>
+                <image src="../../img/10015.jpg"></image>
+                <view class="right">
+                    <text>散装土鸡蛋 360枚 40斤</text>
+                    <text class="order">40斤 正负25g</text>
+                    <view class="price-main">
+                        <view class="price">
+                            <i>￥</i>
+                            <em>28.8</em>
+                        </view>
+                        <view class="count">
+                            <i>-</i>
+                            <span>1</span>
+                            <i>+</i>
+                        </view>
+                    </view>
+                </view>
+            </li>
+            <li>
+                <checkbox></checkbox>
+                <image src="../../img/10015.jpg"></image>
+                <view class="right">
+                    <text>散装土鸡蛋 360枚 40斤</text>
+                    <text class="order">40斤 正负25g</text>
+                    <view class="price-main">
+                        <view class="price">
+                            <i>￥</i>
+                            <em>28.8</em>
+                        </view>
+                        <view class="count">
+                            <i>-</i>
+                            <span>1</span>
+                            <i>+</i>
+                        </view>
+                    </view>
+                </view>
+            </li>
+        </ul>
+    </view>
+    <view class="payment">
+        <checkbox>全选</checkbox>
+        <view class="total">
+            <span>合计：</span>
+            <i>￥</i>
+            <em>57.6</em>
+        </view>
+        <view class="btn">去结算（2）</view>
+    </view>
+</view>

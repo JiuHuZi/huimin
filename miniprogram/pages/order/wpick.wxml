@@ -1,0 +1,5 @@
+<view class="wpick">
+    <image src="../../img/logo.png"></image>
+    <view>你还没有相关订单</view>
+    <button class="shopping" bindtap="shop">去购物</button>
+</view>

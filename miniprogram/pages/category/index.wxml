@@ -1,0 +1,37 @@
+<!--pages/category/index.wxml-->
+<view class="classify">
+	<view class="searchInput">
+		<view class="input">
+			<i class="iconfont icon-sousuo1"></i>
+			<input type="text" placeholder="搜索商品-好货等你" />
+		</view>
+	</view>
+	<view class="navContent">
+		<view class="left-nav">
+			<ul>
+				<li wx:if="{{categories}}" wx:for="{{categories}}" wx:key='this' bindtap="changeItem" data-index='{{index}}'>
+					<span class="{{currentIndex == index ? 'active' : ''}}">{{item.name}}</span>
+				</li>
+			</ul>
+		</view>
+		<view class="right-list">
+			<ul>
+				<li wx:for="{{goods}}" wx:key="this">
+					<image src="{{item.imgUrl}}"></image>
+					<view class="content">
+						<text>{{item.name}}</text>
+						<span>提货时间： {{item.getTime}}</span>
+					</view>
+					<view class="price">
+						<view class="goods-price">
+							<i>￥</i>
+							<span class="goods-money">{{item.money}}</span>
+							<span class="sold">已售{{item.sold}}件</span>
+						</view>
+						<view class="cart">加入购物车</view>
+					</view>
+				</li>
+			</ul>
+		</view>
+	</view>
+</view>

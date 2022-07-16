@@ -1,0 +1,78 @@
+<!--miniprogram/pages/mine/index.wxml-->
+<view class="container">
+    <view class="header">
+        <View class="user_info">
+            <image class="user_img" src="/img/10019.gif" />
+            <view class="hmjf">
+                <text class="phone">{{phonenum}}</text>
+                <view class="mark">
+                    <p class="ml">积</p>
+                    <p class="mr">积分{{mark}}</p>
+                </view>
+            </view>
+            <view class="account">
+                <span>账号管理</span>
+                <image class="img_big" src="/img/big.png" />
+            </view>
+        </View>
+        <view class="bg"></view>
+        <view class="vip">
+            <view class="up"></view>
+            <view class="down"></view>
+            <view class="vvip">
+                <span class="vl">会员</span>
+                <text decode="true">&nbsp;&emsp;&nbsp;</text>
+                <span class="vc">升级会员享更多优惠</span>
+                <span class="vr">详情</span>
+            </view>
+        </view>
+    </view>
+    <view class="nav">
+        <navigator url="../order/order">
+            <image class="nav_img" src="/img/qbdd.png" mode="scaleToFill"></image>
+            <view class="nav_title">全部订单</view>
+        </navigator>
+        <navigator url="../order/order?tab=1">
+            <image class="nav_img" src="/img/dfk.png" mode="scaleToFill"></image>
+            <view class="nav_title">待付款</view>
+        </navigator>
+        <navigator url="../order/order">
+            <image class="nav_img" src="/img/dth.png" mode="scaleToFill"></image>
+            <view class="nav_title">待提货</view>
+        </navigator>
+        <navigator url="../order/order">
+            <image class="nav_img" src="/img/yth.png" mode="scaleToFill"></image>
+            <view class="nav_title">已提货</view>
+        </navigator>
+    </view>
+    <view class="content">
+        <view class="detail">
+            <p class="detail_left">我当前自提店</p>
+            <p class="detail_right">切换自提点</p>
+        </view>
+        <view class="addr">
+            <view class="triangle"></view>
+            <view class="addr_detail">
+                <view style="font-weight:700; font-size:14px;">岳麓区梅溪湖街道东方红小区快乐惠店</view>
+                <view style="display:flex; margin: 15rpx; ">
+                    <p style="flex:1;display: flex;align-items:center">
+                        <image class="img_us" src="/img/user.png" />{{visit}}万人来过
+                    </p>
+                    <p style="flex:1;display: flex;align-items:center">
+                        <image class="img_us" src="/img/support.png" />{{praise}}万人点赞
+                    </p>
+                </view>
+                <view style="font-weight:400; font-size:14px;">门店地址：湖南省长沙市岳麓区梅西湖街道建顺源9栋2单元</view>
+            </view>
+            <view class="connect">
+                <button class="contact" bindtap="callPhone">电话联系门店</button>
+                <button class="guide">导航去门店</button>
+            </view>
+            <view class="safe">
+                <image class="shield" src="/img/shield.png"></image>
+                <view style="align-items: center; font-weight: 400; font-size: 26rpx; margin: 18rpx;">如您购买的商品有任何问题，请直接与购买门店联系，门店会为您处理，让您售后无忧</view>
+            </view>
+        </view>
+    </view>
+    <button class="shopping" bindtap="shop">去购物</button>
+</view>

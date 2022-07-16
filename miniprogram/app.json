@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/index",
+    "pages/category/index",
+    "pages/cart/index",
+    "pages/mine/index",
+    "pages/mine/login",
+    "pages/detail/index"
+  ],
+  "window": {
+    "backgroundColor": "#d93025",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d93025",
+    "navigationBarTitleText": "汇民电商",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#ff0000",
+    "color": "#000",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "img/tabbar/home.png",
+        "selectedIconPath": "img/tabbar/in-home.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "img/tabbar/category.png",
+        "selectedIconPath": "img/tabbar/in-category.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "img/tabbar/cart.png",
+        "selectedIconPath": "img/tabbar/in-cart.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "img/tabbar/my.png",
+        "selectedIconPath": "img/tabbar/in-my.png"
+      }
+    ]
+  }
+}

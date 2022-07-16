@@ -1,0 +1,28 @@
+<!--pages/search/index.wxml-->
+<view class="search">
+	<view class="searchInput">
+		<view class="input">
+			<i class="iconfont icon-sousuo1"></i>
+			<input type="text" placeholder="搜索商品-好货等你" />
+		</view>
+		<navigator url="/pages/index/index" open-type="switchTab">
+			<text>取消</text>
+		</navigator>
+	</view>
+	<view class="history">
+		<text>历史记录</text>
+		<ul>
+			<li>鸡蛋</li>
+			<li>大茄子</li>
+			<li>蔬菜</li>
+			<li>王守义十三香</li>
+		</ul>
+	</view>
+	<view class="history">
+		<text>大家都在搜</text>
+		<ul>
+			<li>西瓜</li>
+			<li>包菜</li>
+		</ul>
+	</view>
+</view>

@@ -1,0 +1,273 @@
+/* pages/detail/index.less */
+@import "../../common/icon.wxss";
+
+.detail {
+	width: 100vw;
+	height: 100vh;
+
+	.headerNav {
+		width: 100%;
+		height: 45px;
+		background-color: #fff;
+
+		ul {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			li {
+				padding: 10px 0;
+				position: relative;
+			}
+
+			.active {
+				color: red;
+			}
+
+			.active::after {
+				content: '';
+				width: 40px;
+				height: 3px;
+				background-color: red;
+				position: absolute;
+				bottom: 2px;
+				left: 20%;
+			}
+		}
+	}
+
+	.swiper {
+		width: 100%;
+		height: 400px;
+
+		swiper {
+			height: 100%;
+			width: 100%;
+
+			image {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
+	.price-main {
+		width: 100%;
+		height: 80px;
+		background-color: red;
+		color: #fff;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.price {
+			margin-left: 40px;
+			font-weight: bold;
+
+			em {
+				font-size: 30px;
+			}
+		}
+
+		.time-main {
+			margin-right: 20px;
+			font-size: 16px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.time {
+				width: 100%;
+				padding: 5px 10px;
+				margin-top: 5px;
+				font-weight: bold;
+				text-align: center;
+				background-color: #fff;
+				color: red;
+				border-radius: 15px;
+			}
+		}
+	}
+
+	.title-main {
+		width: 100%;
+		// height: 80px;
+		background-color: #fff;
+
+		.title {
+			padding: 15px 10px 10px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.order-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 5px 10px 10px;
+
+			.count {
+				width: 100px;
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+
+				i {
+					font-size: 24px;
+
+					&:last-child {
+						color: red;
+					}
+				}
+			}
+		}
+	}
+
+	.detail-main {
+		width: 100%;
+		margin-top: 10px;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		.introduce {
+			text-align: center;
+			padding: 10px 0;
+			position: relative;
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: calc(50% - 100px - 50px);
+				width: 100px;
+				height: 1px;
+				background-color: #ccc;
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: calc(50% - 100px - 50px);
+				width: 100px;
+				height: 1px;
+				background-color: #ccc;
+			}
+		}
+
+		.goods-introduce {
+			width: 90%;
+			background-color: pink;
+			border-radius: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				padding: 10px;
+
+				li {
+					padding: 5px 10px;
+					font-size: 14px;
+					display: flex;
+					align-items: center;
+
+					span {
+						&:first-child {
+							flex: 1.5;
+						}
+
+						&:last-child {
+							flex: 4;
+						}
+					}
+				}
+			}
+		}
+
+		.goods-msg {
+			// padding: 20px;
+			width: 90%;
+			margin-bottom: 10px;
+		}
+
+		.detail-img {
+			width: 100vw;
+			margin-bottom: 60px;
+
+			ul {
+				width: 100%;
+
+				li {
+					width: 100%;
+
+					image {
+						width: 100%;
+					}
+
+				}
+			}
+		}
+	}
+
+	.pay {
+		width: 100%;
+		height: 50px;
+		background-color: #fff;
+		position: fixed;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+
+		.left-btn {
+			flex: 1.5;
+			display: flex;
+			justify-content: center;
+			font-weight: bold;
+
+			view {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				text-align: center;
+
+				i {
+					font-size: 18px;
+				}
+
+				span {
+					font-size: 12px;
+				}
+			}
+		}
+
+		.right-btn {
+			flex: 3;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			view {
+				color: #fff;
+				font-weight: bold;
+				padding: 10px 25px;
+				border-radius: 20px;
+				margin-left: 10px;
+			}
+
+			.cart {
+				background-color: orange;
+			}
+
+			.paybtn {
+				background-color: red;
+			}
+		}
+	}
+}

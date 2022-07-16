@@ -1,0 +1,29 @@
+<view class="orderlist">
+    <scroll-view scroll-y="true">
+        <ul>
+            <li wx:for="{{orderList}}" wx:key="this">
+                <view class="orderlist_top">
+                    <span style="width: 50%; position: relative;">2020-01-01</span>
+                    <span style="width: 50%; position: relative; text-align: end; ">交易{{item.state}}
+                        <text decode="true">&nbsp;|&nbsp;</text>
+                    </span>
+                    <image src="../../img/trash.png"></image>
+                </view>
+                <view class="orderlist_center">
+                    <image style="width: 178rpx; position: relative; height: 148rpx;" src="../../img/10005.png" />
+                    <text>{{item.goodstitle}}</text>
+                    <view class="orderlist_cspan">
+                        <span>{{item.pickdate}}提货</span>
+                        <span>×{{item.goodsnum}}</span>
+                    </view>
+                </view>
+                <view class="orderlist_end">
+                    <span>共{{item.goodsnum}}件</span>
+                    <span>应付总额：</span>
+                    <i>￥{{item.money}}</i>
+                    <view class="agabuy">{{item.buystate}}</view>
+                </view>
+            </li>
+        </ul>
+    </scroll-view>
+</view>

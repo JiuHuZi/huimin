@@ -1,0 +1,214 @@
+/* pages/order/order.wxss */
+@import "../../common/icon.wxss";
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    background-color: #fff;
+    height: 200rpx;
+    width: 100%;
+}
+
+.searchInput {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 22rpx;
+}
+
+.searchInput .input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput .input i {
+    color: #000;
+    position: absolute;
+    left: 20rpx;
+    font-size: 40rpx;
+}
+
+.searchInput input {
+    background-color: #eee;
+    width: 80vw;
+    height: 80rpx;
+    border-radius: 30rpx;
+    padding-left: 80rpx;
+    font-size: 28rpx;
+}
+
+.nav {
+    display: flex;
+    position: relative;
+    margin-top: 112rpx;
+}
+
+.tab-item {
+    flex: 1;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 72rpx;
+}
+
+.tab-item.active {
+    position: relative;
+    color: #D93025;
+    width: 32rpx;
+    height: 6rpx;
+}
+
+.tab-item.active::after {
+    content: "  ";
+    width: 1.2rem;
+    height: 6rpx;
+    background-color: #D93025;
+    margin: 0 auto;
+    display: block;
+    border-radius: 30%;
+}
+
+.content>swiper {
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    background-color: #EDEDED;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.orderList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.orderList ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+swiper-item {
+    overflow: scroll;
+}
+
+.orderlist ul li {
+    width: 96%;
+    height: 432rpx;
+    border-radius: 15px;
+    font-size: 14px;
+    background-color: #fff;
+    overflow: hidden;
+    /* outline: 1px solid #000; */
+    /* box-shadow: 0px 0px 5px #bbb; */
+    display: flex;
+    flex-direction: column;
+    margin: 16rpx;
+}
+
+.orderlist ul li .orderlist_top {
+    margin: 22rpx;
+    float: right;
+    height: 60rpx;
+    display: flex;
+    font-size: 28rpx;
+    align-items: center;
+    color: #444444;
+    /* justify-content: center; */
+    border-bottom: 1px solid #ccc;
+}
+
+.orderlist ul li .orderlist_top image {
+    width: 36rpx;
+    height: 36rpx;
+}
+
+.orderlist ul li .orderlist_center {
+    margin: 18rpx;
+    float: right;
+    height: 160rpx;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    border-bottom: 1px solid #ccc;
+    flex-direction: column;
+}
+
+.orderlist ul li .orderlist_center text {
+    font-weight: bold;
+    font-size: 28rpx;
+    padding: 5px 0;
+}
+
+.orderlist ul li .orderlist_center .orderlist_cspan {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18rpx;
+    padding-right: 18rpx;
+    font-size: 24rpx;
+    color: rgb(133, 133, 133)
+}
+
+.orderlist ul li .orderlist_end {
+    text-align: end;
+}
+
+.orderlist ul li .orderlist_end span {
+    font-size: 28rpx;
+    margin-right: 18rpx;
+    margin-top: 10rpx;
+    color: rgb(133, 133, 133);
+    font-weight: 400;
+}
+
+.orderlist ul li .orderlist_end i {
+    font-size: 28rpx;
+    font-weight: bold;
+    margin-right: 36rpx;
+}
+
+.orderlist ul li .orderlist_end .agabuy {
+    position: absolute;
+    right: 36rpx;
+    display: flex;
+    width: 160rpx;
+    height: 52rpx;
+    border: 1px solid rgb(236, 13, 13);
+    color: rgb(236, 13, 13);
+    border-radius: 45rpx;
+    justify-content: center;
+    align-items: center;
+    margin: 16rpx;
+    font-size: 24rpx;
+    /* font-weight: bold; */
+}
+
+/* wpick.wxml */
+.wpick {
+    text-align: center;
+}
+
+.shopping {
+    width: 65%;
+    justify-content: center;
+    color: white;
+    border-radius: 50rpx;
+    background-color: red;
+    margin-top: 68rpx;
+}

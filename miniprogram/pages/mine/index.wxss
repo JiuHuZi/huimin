@@ -1,0 +1,292 @@
+/* miniprogram/pages/mine/index.wxss */
+/* pages/user/user.wxss */
+@import "../../common/icon.wxss";
+
+.header {
+    width: 100%;
+    height: 303rpx;
+    background-color: #EC0D0D;
+    border-radius: 0 0 40% 40%;
+    color: #fff;
+    font-weight: bold;
+}
+
+.user_info {
+    position: absolute;
+    padding-top: 40rpx;
+    padding-left: 50rpx;
+}
+
+.user_img {
+    position: absolute;
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+}
+
+.hmjf {
+    display: flex;
+    top: 40rpx;
+    padding-left: 140rpx;
+    font-size: 32rpx;
+}
+
+.phone {
+    position: absolute;
+    font-weight: 500;
+}
+
+.mark {
+    display: flex;
+    margin-top: 60rpx;
+    width: 200rpx;
+    height: 60rpx;
+    background-color: rgb(250, 79, 81);
+    border-color: rgb(255, 255, 255);
+    border-width: 2rpx;
+    border-style: solid;
+    border-radius: 44rpx;
+    align-items: center;
+    text-align: center;
+}
+
+.ml {
+    padding-left: 8rpx;
+    display: flex;
+    box-sizing: border-box;
+    width: 47rpx;
+    height: 47rpx;
+    align-items: center;
+    background-color: rgb(240, 151, 68);
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 28rpx;
+}
+
+.mr {
+    font-size: 28rpx;
+    width: 130rpx;
+    height: 40rpx;
+}
+
+.account {
+    position: absolute;
+    left: 560rpx;
+    top: 66rpx;
+    width: 100%;
+    height: 58rpx;
+    display: flex;
+    font-size: 24rpx;
+    align-items: center;
+}
+
+.img_big {
+    width: 36rpx;
+    height: 36rpx;
+    margin-left: 5px;
+}
+
+.vip {
+    display: flex;
+    justify-content: center;
+}
+
+.bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 490rpx;
+    background-color: rgb(255, 255, 255);
+    border-style: none;
+    border-color: unset;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+    color: rgb(255, 255, 255);
+    border-radius: 8px 12px 12px;
+}
+
+.up {
+    top: 200rpx;
+    position: absolute;
+    width: 658rpx;
+    height: 52rpx;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px 20px 0 0;
+}
+
+.down {
+    top: 200rpx;
+    position: absolute;
+    width: 658rpx;
+    height: 107rpx;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+    text-align: center;
+}
+
+.vvip {
+    display: block;
+    top: 226rpx;
+    width: 50%;
+    position: absolute;
+    left: 100rpx;
+    justify-content: center;
+    align-items: center;
+}
+
+.vvip .vl {
+    font-size: 32rpx;
+    color: rgb(227, 197, 158);
+    /* line-height: 22px; */
+}
+
+.vvip .vc {
+    font-size: 28rpx;
+    color: rgb(159, 148, 146);
+}
+
+.vvip .vr {
+    position: absolute;
+    width: 142rpx;
+    height: 42rpx;
+    left: 396rpx;
+    top: 4rpx;
+    background-color: rgb(252, 211, 175);
+    color: rgb(138, 96, 50);
+    border-radius: 19px;
+    font-size: 28rpx;
+    text-align: center;
+}
+
+
+.nav {
+    display: flex;
+    width: 92%;
+    justify-content: space-around;
+}
+
+.nav .nav_img {
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+    margin: 20rpx 20rpx 0 20rpx;
+}
+
+.nav .nav_title {
+    text-align: center;
+}
+
+.content {
+    width: 95%;
+    height: 540rpx;
+    margin: 30rpx;
+}
+
+.detail {
+    display: flex;
+    width: 100%;
+    height: 72rpx;
+    background-color: rgb(230, 212, 140);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+    border-radius: 6px 6px 0px 0px;
+    font-size: 14px;
+    align-items: center;
+    /* text-align: justify; */
+}
+
+.detail .detail_left {
+    float: left;
+    padding-left: 50rpx;
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(145, 120, 16, 1);
+}
+
+.detail .detail_right {
+    /* float: right; */
+    margin: 0 auto;
+    padding-left: 120rpx;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(16, 16, 16, 0.82);
+}
+
+.addr {
+    width: 100%;
+    height: 600rpx;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 6px 0px;
+    font-size: 14px;
+}
+
+.addr .addr_detail {
+    padding-left: 36rpx;
+    padding-right: 36rpx;
+}
+
+
+
+.addr .addr_detail .img_us {
+    align-items: center;
+    width: 44rpx;
+    height: 44rpx;
+    margin-right: 12rpx;
+}
+
+.addr .triangle {
+    justify-content: center;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border: 20rpx solid;
+    border-color: #EDD472 transparent transparent transparent;
+}
+
+.addr .connect {
+    display: flex;
+    margin-top: 30rpx;
+    box-sizing: content-box;
+}
+
+.addr .connect .contact {
+    width: 299rpx;
+    border: 6rpx solid red;
+    color: red;
+    border-radius: 10rpx;
+}
+
+.addr .connect .guide {
+    width: 299rpx;
+    border: 6rpx solid #aaa;
+    color: #aaa;
+    border-radius: 10rpx;
+}
+
+.safe {
+    background-color: rgba(250, 79, 81, 0.22);
+    border-radius: 8px;
+    font-size: 14px;
+    margin: 25rpx;
+    display: flex;
+    align-items: center;
+    height: 130rpx;
+}
+
+.shield {
+    position: relative;
+    width: 120rpx;
+    height: 80rpx;
+    margin: 15rpx;
+}
+
+.shopping {
+    width: 65%;
+    color: white;
+    border-radius: 50rpx;
+    background-color: red;
+    margin-top: 168rpx;
+    margin-bottom: 168rpx;
+}
+
+.login {
+    position: fixed;
+    bottom: 0;
+}

@@ -1,0 +1,118 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="container">
+    <view class="header">
+        <view class="title">
+            <image src="../../img/10020.png" alt="" class="hchh" />
+            <image src="../../img/10021.png" alt="" class="selogan" />
+        </view>
+        <view>
+            <navigator url="/pages/search/index" class="search">
+                <i class="iconfont icon-sousuo1"></i>
+                <input type="text" placeholder="搜索商品-好货等你" placeholder-style="font-size:14px" />
+            </navigator>
+        </view>
+        <view class="swiper">
+            <!--轮播图-->
+            <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+                duration="{{duration}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{activeColor}}">
+                <block wx:for="{{imgUrls}}" wx:key="this">
+                    <swiper-item>
+                        <navigator url="{{item.link}}" hover-class="navigator-hover">
+                            <image src="{{item.url}}" class="slide-image" width="355" height="200" />
+                        </navigator>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <view class="nav">
+        <ul>
+            <li wx:for="{{navList}}" wx:key="this">
+                <navigator url="{{item.url}}" open-type="switchTab">
+                    <image src="{{item.imgUrl}}"></image>
+                    <span>{{item.name}}</span>
+                </navigator>
+            </li>
+        </ul>
+    </view>
+    <view class="goodsList">
+        <ul>
+            <li wx:for="{{goodsList}}" wx:key="this">
+                <image src="{{item.imgUrl}}"></image>
+                <view class="content">
+                    <text>{{item.name}}</text>
+                    <span>提货时间： {{item.getTime}}</span>
+                </view>
+                <view class="price">
+                    <view class="goods-price">
+                        <i>￥</i>
+                        <span class="goods-money">{{item.money}}</span>
+                        <span class="sold">已售{{item.sold}}件</span>
+                    </view>
+                    <view class="cart">加入购物车</view>
+                </view>
+            </li>
+        </ul>
+    </view>
+    <view class="good-goods">
+        <image src="../../img/10014.png" class="good-title"></image>
+        <view class="good-nav">
+            <view class="goods-nav-content">
+                <text class="goods-nav-title">食肉联盟</text>
+                <text class="classify">猪肉 羊肉 牛肉……</text>
+                <view class="btn">
+                    <p> 都是最<em>低价</em> </p>
+                    <view>GO >></view>
+                </view>
+                <image src="../../img/10019.gif"></image>
+            </view>
+            <view class="goods-nav-content">
+                <view class="goods-nav-right">
+                    <view class="goods-nav-right-title">
+                        <text>家常蔬菜</text>
+                        <text>惊爆价</text>
+                    </view>
+                    <view class="goods-nav-right-main">
+                        <view class="btn">
+                            <p>低至<em>1.99</em>元起</p>
+                            <view>GO >></view>
+                        </view>
+                        <image src="../../img/10017.png"></image>
+                    </view>
+                </view>
+                <view class="goods-nav-right">
+                    <view class="goods-nav-right-title">
+                        <text>必备水果</text>
+                        <text>惊爆价</text>
+                    </view>
+                    <view class="goods-nav-right-main">
+                        <view class="btn">
+                            <p>低至<em>0.99</em>元起</p>
+                            <view>GO >></view>
+                        </view>
+                        <image src="../../img/10018.jpg"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="goodsList">
+        <ul>
+            <li wx:for="{{goodsList}}" wx:key="this">
+                <image src="{{item.imgUrl}}"></image>
+                <view class="content">
+                    <text>{{item.name}}</text>
+                    <span>提货时间： {{item.getTime}}</span>
+                </view>
+                <view class="price">
+                    <view class="goods-price">
+                        <i>￥</i>
+                        <span class="goods-money">{{item.money}}</span>
+                        <span class="sold">已售{{item.sold}}件</span>
+                    </view>
+                    <view class="cart">加入购物车</view>
+                </view>
+            </li>
+        </ul>
+    </view>
+</view>
